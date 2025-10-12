@@ -1,0 +1,31 @@
+{
+  "name": "serverless-arn-resolver-plugin",
+  "version": "0.1.0",
+  "description": "A Serverless Framework plugin that resolves ARNs of AWS resources by their ids/names",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "serverless",
+    "serverless-plugin",
+    "aws",
+    "arn",
+    "resolver",
+    "wafv2",
+    "ipset"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "engines": {
+    "node": ">=18.20.3"
+  },
+  "peerDependencies": {
+    "serverless": "^3.0.0 || ^4.0.0"
+  }
+}
