@@ -1,26 +1,37 @@
 {
-  "name": "serverless-aws-lookup-plugin",
+  "name": "@clouddevlabs/serverless-aws-lookup-plugin",
   "version": "0.1.0",
   "description": "A Serverless Framework plugin that resolves ARNs or other fields of AWS resources by their ids/names",
+  "keywords": [
+    "serverless",
+    "serverless-plugin",
+    "aws",
+    "arn",
+    "resolver",
+    "lookup",
+    "dynamodb",
+    "wafv2",
+    "ipset"
+  ],
+  "homepage": "https://github.com/ynovytskyy/serverless-aws-lookup-plugin",
+  "bugs": {
+    "url": "https://github.com/ynovytskyy/serverless-aws-lookup-plugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ynovytskyy/serverless-aws-lookup-plugin.git"
+  },
+  "license": "MIT",
+  "author": "Yaroslav Novytskyy <ynovytskyy@gmail.com>",
+  "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "serverless", "serverless-plugin", "aws", "arn", "resolver", "lookup",
-    "dynamodb", "wafv2", "ipset"
-  ],
-  "author": "Yaroslav Novytskyy <ynovytskyy@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ynovytskyy/serverless-aws-lookup-plugin.git"
-  },
-  "homepage": "https://github.com/ynovytskyy/serverless-aws-lookup-plugin",
-  "engines": {
-    "node": ">=18.20.3"
-  },
   "peerDependencies": {
     "serverless": "^3.0.0 || ^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.20.3"
   }
 }
