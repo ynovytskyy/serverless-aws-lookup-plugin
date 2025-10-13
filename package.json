@@ -1,21 +1,16 @@
 {
-  "name": "serverless-arn-resolver-plugin",
+  "name": "serverless-aws-lookup-plugin",
   "version": "0.1.0",
-  "description": "A Serverless Framework plugin that resolves ARNs of AWS resources by their ids/names",
+  "description": "A Serverless Framework plugin that resolves ARNs or other fields of AWS resources by their ids/names",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "serverless",
-    "serverless-plugin",
-    "aws",
-    "arn",
-    "resolver",
-    "wafv2",
-    "ipset"
+    "serverless", "serverless-plugin", "aws", "arn", "resolver", "lookup",
+    "dynamodb", "wafv2", "ipset"
   ],
-  "author": "",
+  "author": "Yaroslav Novytskyy <ynovytskyy@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
