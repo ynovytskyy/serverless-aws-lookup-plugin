@@ -1,5 +1,5 @@
 {
-  "name": "@clouddevlabs/serverless-aws-lookup-plugin",
+  "name": "serverless-aws-lookup-plugin",
   "version": "0.1.0",
   "description": "A Serverless Framework plugin that resolves ARNs or other fields of AWS resources by their ids/names",
   "keywords": [
@@ -33,8 +33,5 @@
   },
   "engines": {
     "node": ">=18.20.3"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
