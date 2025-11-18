@@ -14,8 +14,16 @@ class AwsLookupPlugin {
             service: 'WAFV2',
             command: 'listIPSets',
             params: { Scope: 'REGIONAL' },
-            matchFieldName: 'Name',
             collectionFieldName: 'IPSets',
+            matchFieldName: 'Name',
+            defaultReturnFieldName: 'ARN',
+        },
+        'wafv2-webacl-regional-by-name': {
+            service: 'WAFV2',
+            command: 'listWebACLs',
+            params: { Scope: 'REGIONAL' },
+            collectionFieldName: 'WebACLs',
+            matchFieldName: 'Name',
             defaultReturnFieldName: 'ARN',
         },
     }

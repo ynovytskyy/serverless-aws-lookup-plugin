@@ -46,7 +46,8 @@ plugins:
 The following resolvers are currently built-in (see `RESOLVERS` in `src/index.js`):
 
 - `dynamodb-table-by-name` - calls `DynamoDB` service `describeTable` with `TableName`
-- `wafv2-ipset-regional-by-name` - calls `WAFV2` service `listIPSets` with `Scope: REGIONAL` and match on `Name`
+- `wafv2-ipset-regional-by-name` - calls `WAFV2` service `listIPSets` with `Scope: REGIONAL` and matches on `Name`
+- `wafv2-webacl-regional-by-name` - calls `WAFV2` service `listWebACLs` with `Scope: REGIONAL` and matches on `Name`
 
 General notes:
 - Matching resolvers that list resources will throw if multiple resources with the same name are found.
