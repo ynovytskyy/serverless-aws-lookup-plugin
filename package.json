@@ -1,6 +1,6 @@
 {
   "name": "serverless-aws-lookup-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Serverless Framework plugin that resolves ARNs or other fields of AWS resources by their ids/names",
   "keywords": [
     "serverless",
@@ -26,12 +26,15 @@
   "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test"
   },
   "peerDependencies": {
     "serverless": "^3.0.0 || ^4.0.0"
   },
   "engines": {
     "node": ">=18.20.3"
-  }
+  },
+  "files": [
+    "src"
+  ]
 }
