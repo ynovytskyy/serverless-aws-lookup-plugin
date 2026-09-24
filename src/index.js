@@ -112,12 +112,10 @@ class AwsLookupPlugin {
         const all = []
         let nextMarker = null
         do {
-            if (nextMarker) {
-                params.NextMarker = nextMarker
-            }
+            const requestParams = nextMarker ? { ...params, NextMarker: nextMarker } : { ...params }
             this.log.debug(`Requesting service='${service}', command='${command}', ` +
-                `parameters='${JSON.stringify(params)}'`)
-            const response = await this.provider.request(service, command, params)
+                `parameters='${JSON.stringify(requestParams)}'`)
+            const response = await this.provider.request(service, command, requestParams)
             const page = response[collectionFieldName] || []
             all.push(...page)
             nextMarker = response.NextMarker
